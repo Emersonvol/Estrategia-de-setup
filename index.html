@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Organizacao de Maquinas e o peradores</title>
+</head>
+
+<body>
+    <main class="interface">
+        <header class="parte-superior">
+            <h1 class="pag-titulo">Exelencia no SETUP - Estrategia HBU - Canal 31</h1>
+            <p>Planejamento de SETUP Data: <input type="date" class="top pag-data"> Inicia as : <input type="time"
+                    class="top pag-time"></p>
+
+        </header>
+
+        <div class="att-antes-do-setup">
+            <p>Tipo Anterior: <select class="att tipo-Anterior">
+                <optgroup label="Tipos">
+                    <option>BAR-5219</option>
+                    <option>BAR-0428</option>
+                </optgroup>
+            </select></p>
+            <p>Tipo Posterior: <select class="att tipo-Anterior">
+                <optgroup label="Tipos">
+                    <option>BAR-5219</option>
+                    <option>BAR-0428</option>
+                </optgroup>
+            </select></p>
+            <p>Meta Anterior: <input type="time" class="att pag-time"></p>
+            <p>Meta a ser alcançada: <input type="time" class="att pag-time"></p>
+        </div>
+
+        <section class="Operadores-Maquinas">
+            <div class="Operadores">
+                <div class="tab">
+                    <input type="radio" name="tabs" id="tab1" checked>
+                    <label for="tab1">Maquinas e Operadores</label>
+
+                    <input type="radio" name="tabs" id="tab2">
+                    <label for="tab2">Ocorencias de maquinas</label>
+                    <div class="tabs">
+                        <div class="content">
+                            <div class="durante-setup">
+                                <p >Maquinas</p>
+                                <p >Preparador</p>
+                                <p>Padrao(Hora)</p>
+                                <span>H. Inicio</span>
+                                <p>H. Final</p>
+                                <p>Melhor T.</p>
+                                <p>T. Atual</p> 
+                                <p>Avaliacao</p>
+                            </div>
+                            
+                            <div class="inicio-liberacao"></div>
+                            <div class ="consjunto maquinas" id="durante-setup"></div>
+                            <div class ="consjunto preparador" id="preparado-setup"></div>
+                            <div class="tempo-atual"></div>
+                            <div class="maquinas-por-operador">
+                            <div class="Melhor-tempo"></div>
+                            <div class="Avaliacao"></div>
+                                <button class="btn add-maquinas">Adcionar maquinas</button>
+                                <button class="btn add-tempo">Registra tempo</button>
+                            </div>
+                            <div class="tempo-padrao"></div>
+
+                        </div>
+                        
+                        <div class="content">
+                            <fieldset class="Ocorrencias">
+                                <legend>Ocorencias de maquinas</legend>
+                                <div class="Novas-Ocorrencias"></div>
+                                <input class="text-ocorrencias" placeholder="Ocorencias do SETUP...">
+                                <button class="btn add-Ocorrencias">Adcionar Ocorencias</button>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <fieldset class="time-de-operadores">
+                <legend>TIME</legend>
+                <div class="nomes"></div>
+                <input class="nomeOperador" type="text" >
+                <button class="btn add-Operador">Adcionar Operadores</button>
+            </fieldset>
+        </section>
+
+        <article class="principais-ocorrencias">
+
+
+
+
+        </article>
+        <script src="script.js"></script>
+    </main>
+</body>
+
+</html>
