@@ -57,12 +57,13 @@ top:10em;
 }
 
 .time-de-operadores{
-    top: -4.8em;
+    top: -4.4em;
     width: 350px;
     text-align: center;
     position: relative;
-    left: 95em;
-
+    left: 90em;
+    border: solid 2px  #5b9097;
+    border-radius: 5px;
 }
 .time-de-operadores legend{
     font-family: 'Tilt Warp', cursive;
@@ -76,9 +77,10 @@ top:10em;
     font-family: 'Tilt Warp', cursive;
     color:#3383cd;
     text-align: left;/*Para os Ps que iram aparecer ao adcionar novas pessoas*/
-     
+    
   }
 .btn{
+  text-align: center;
     background: #02c4ff;
     border: none;
     font-family: 'Tilt Warp', cursive;
@@ -95,7 +97,7 @@ top:10em;
 .btn:active{
     background: #031bfb;
 }
-.add-maquinas,.add-tempo{
+.add-maquinas,.add-tempo,.remover-Operador{
     position: relative;
     top:3em;
     padding: 2em;
@@ -111,25 +113,37 @@ top:10em;
     border-radius: 5px;
     
 }
-.add-Operador{
-    padding: 2em;
-    border-radius: 1em;
-  
-
+.add-Operador,.rmv-Operador ,.finalizar-time{
+    padding: .4em;
+    border-radius: .5em;
+    text-align: center;
+    margin: .2em;
+   
 }
+
+
 .Ocorrencias{
     position: relative;
     text-align: center;
     width: 1255px;
-    height: 25em;
+    height: 27em;
     border: none;
 }
 .nomeOperador{
     height: 2em;
     border-radius: 15px;
     font-size:large;
-    
+    border: 2px solid #5b9097;
+    cursor: pointer;
 }
+.nomeOperador:active{
+  border: 5px solid #5b9097;
+}
+
+.nomeOperador:hover{
+  border: 5px solid #72999e;
+}
+
 .Ocorrencias legend{
     font-size:large;
     font-family: 'Tilt Warp', cursive;
@@ -153,7 +167,7 @@ div p{
     text-align: left;
 }
 .Novas-Ocorrencias p{
-    color: #cd2005;
+    color: #1205cd;
     position: relative;
     top: 1em;
 }
@@ -194,7 +208,8 @@ div p{
     background: #fff;
     width: 80em ;
     position: absolute;
-    border: 2px solid #5b9780;
+    border: 2px solid #5b9097;
+    border-radius: 5px;
     padding: 10px 30px 40px;
     line-height: 1.4em;
     opacity: 0;
@@ -210,6 +225,7 @@ div p{
     transform: rotateX(0);
     opacity: 1;
     z-index: 1;
+    
   }
   .durante-setup{
     display: block;
@@ -320,7 +336,6 @@ div p{
     font-size: var(--tamanhoFont);
     width: 3.9em;
     height: 39px;  
-    
     text-align: center;
     position: relative;
   }
