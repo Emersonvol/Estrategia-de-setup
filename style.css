@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
-@import url("/css/reset.css");
-@import url("/css/banner/styled.css");
-@import url('/css/secaoTroca/styled.css');
-@import url('/css/secaoOrganizacao/styled.css');
-@import url('/css/time/style.css');
-@import url('/css/quadroOcorrencia/style.css');
+@import url("/Estrategia-de-setup/css/reset.css");
+@import url("/Estrategia-de-setup/css/banner/styled.css");
+@import url('/Estrategia-de-setup/css/secaoTroca/styled.css');
+@import url('/Estrategia-de-setup/css/secaoOrganizacao/styled.css');
+@import url('/Estrategia-de-setup/css/time/style.css');
+@import url('/Estrategia-de-setup/css/quadroOcorrencia/style.css');
 
 :root {
   --corPrimaria: #0284ff;
