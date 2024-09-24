@@ -1,0 +1,43 @@
+.Organizacao__time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid;
+    border: var(--corQuarternaria) solid 2px;
+    position: absolute;
+    top:500px;
+    width:70%;
+}
+
+.Organizacao__time h2 {
+    margin: 1em 0 10em 0;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: var(--corPrimaria);
+
+}
+
+.Organizacao__time-ul{
+    display: flex;
+    font-size: 2em;
+    padding:0 2em;
+    text-transform: uppercase;
+    color: var(--corTerciaria);
+}
+
+
+.Organizacao__time-input {
+    width: 27em;
+    display: flex;
+    align-items: center;
+    margin: 0 4em;
+    text-align: center;
+}
+
+.Organizacao__time-nomes {
+    margin: -19em 0 1em 0;
+    border: var(--corQuarternaria) solid 2px;
+    box-sizing: border-box;
+
+}
