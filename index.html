@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Organizacao de Maquinas e o peradores</title>
+</head>
+
+<body>
+
+    <header class="Banner">
+        <h1>Exelencia no SETUP - Estrategia TRZ </h1>
+        <div class="Banner__divisao">
+            <label for="data-planejada">Planejamento de SETUP Data:</label>
+            <input type="date" class="Banner__data" name="data-planejada" id="data-planejada">
+            <label for="hora-inicial">Inicia as: </label>
+            <input type="time" class="Banner__time" id="hora-inicial" name="hora-inicial">
+        </div>
+    </header>
+
+    <main>
+        <section class="secao__troca">
+
+            <label for="tipo-anterior">Tipo Anterior: </label>
+            <select class="secao__troca__anterior" id="tipo-anterior">
+                <option value="Tipo-1" class="tp1">Tipo-1</option>
+                <option value="Tipo-2" class="tp2">Tipo-2</option>
+            </select>
+
+            <label for="tipo-posterior">Tipo Posterior: </label>
+            <select class="secao__troca__posterior" id="tipo-posterior"></select>
+            <label for="meta-anterior">Meta Anterior:</label>
+            <input type="time" class="secao__tempo" id="meta-anterior">
+            <label for="meta-alcancada">Meta a ser alcançada: </label>
+            <input type="time" class="secao__meta" id="meta-alcancada">
+        </section>
+
+        <section class="Organizacao">
+            <ul class="Organizacao__menu">
+                <button type="button" class="Organizacao__botoa-Equipe">Equipe</button>
+                <button type="button" class="Organizacao__botoa-Organizacao">Organizacao</button>
+                <button type="button" class="Organizacao__botoa-Quadro">Quadro de avisos</button>
+            </ul>
+            <article class="Organizacao__tempos">
+                <div class="Organizacao__tempos-preparadores">
+                    <span>Maquinas</span>
+                    
+                    <span>Padrao(Hora)</span>
+                    <span>Preparador</span>
+                    <span>H. Inicio</span>
+                    <span>H. Final</span>
+                    <span>T. Atual</span>
+                    <span>Melhor T.</span>
+                    <span>Avaliacao</span>
+                   
+                </div> 
+                <div class="Organizacao__preparadores-maquinas"></div>
+                <button class="Organizacao__btn-AdicionarPreparador">Adicionar operador</button>
+                <button class="Organizacao__btn-RegistrarTempo">Registrar Tempo</button>
+
+               
+                
+            </article>
+            <article class="Organizacao__ocorrencias">
+                <h2>Quadro de ocorrencias</h2>
+                <div class="Organizacao__ocorrencias-quadro"></div>
+                <div class="Organizacao__ocorrencias-relato">
+                    <label for="Organizacao__ocorrencias-principais">Relate principais ocorrencias:</label>
+                    <input type="text" placeholder="Ocorrencias do dia" class="Organizacao__ocorrencias-principais"
+                        id="Organizacao__ocorrencias-principais">
+                    <button type="submit" class="Organizacao__ocorrencias-btn">Adcionar</button>
+                </div>
+
+            </article>
+
+            <article class="Organizacao__time">
+                <h2>Time</h2>
+                <div class="Organizacao__time-nomes">
+
+                </div>
+                <div class="Organizacao__time-inserir">
+                    <input class="Organizacao__time-input" type="text" name="Organizacao__input"
+                        placeholder="Adcionar preparador" />
+                    <button class="Organizacao__add-Operador">Adcionar Operadores</button>
+
+
+                </div>
+            </article>
+
+        </section>
+
+
+
+
+
+
+
+
+        <script src="./index.js"></script>
+    </main>
+</body>
+
+</html>
