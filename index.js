@@ -121,7 +121,7 @@ btnRegistraTempo.addEventListener('click', (e) => {
   avalicao()
 })
 
-fetch('/maquinas.json')
+fetch('/Estrategia-de-setup/maquinas.json')
   .then(maquinas => { return maquinas.json() })
   .then((maquinasNum) => {
     maquinasNum.map(maq => {
