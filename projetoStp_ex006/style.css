@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+@import url("/css/reset.css");
+@import url("/css/banner/styled.css");
+@import url('/css/secaoTroca/styled.css');
+@import url('/css/secaoOrganizacao/styled.css');
+@import url('/css/time/style.css');
+@import url('/css/quadroOcorrencia/style.css');
+
+:root {
+  --corPrimaria: #0284ff;
+  --corSecundaria: #fff;
+  --corTerciaria: #6eb6f9;
+  --corQuarternaria: #00f8cb;
+  --corQuinaria: #6a00ff;
+
+
+}
